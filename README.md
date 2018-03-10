@@ -46,6 +46,12 @@ repure接受一个**pure function**， 返回这个方法的 缓存版本
 #####  repureOneCacheCreator(equalityCheck)
 repureCreator 在cacheSize=1 时的优化版本
 
+另外提供一个 batchRepure(obj, repure) 方法。 用法如下： 
+```javascript
+import * as fobj from './xx' // file export 衍生函数
+
+const fobj2 = batchRepure(obj, repure)
+```
 
 
  
