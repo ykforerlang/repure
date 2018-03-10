@@ -43,3 +43,12 @@ export function repureCreator(cacheSize, equalityCheck) {
 }
 
 export default repureOneCacheCreator(defaultEqualityCheck)
+
+export function batchRepure(obj, repure) {
+    const r = {}
+    const allF = Object.keys(obj)
+    allF.forEach(fname => {
+        r[fname] = repure(obj[fname])
+    })
+    return r
+}
