@@ -27,7 +27,7 @@ rf(2, 2) // takes 5 seconds
 ### API
 repure 提供3个方法 repureCreator(cacheSize, equalityCheck)， repure， repureOneCacheCreator(equalityCheck)
 
-##### repureCreator(cacheSize, equalityCheck)
+#### repureCreator(cacheSize, equalityCheck)
 函数repureCreator 返回一个repure， 可以缓存cacheSize个结果。 在判断入参是否相同的时候使用 equalityCheck。 
 默认的 equalityCheck 是：
 ```javascript

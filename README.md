@@ -28,7 +28,7 @@ rf(2, 2) // takes 5 seconds
 ### API
 repure provide 3 API: repureCreator(cacheSize, equalityCheck)， repure， repureOneCacheCreator(equalityCheck)
 
-##### repureCreator(cacheSize, equalityCheck)
+#### repureCreator(cacheSize, equalityCheck)
 the result of repureCreator is a **repure** and the wrapped functions could cache **cacheSize** results.
 we will use **equalityCheck** to compare whether or not the parameters are equal.
 
