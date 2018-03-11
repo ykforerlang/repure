@@ -57,4 +57,22 @@ import * as fobj from './xx' // file export func
 const fobj2 = batchRepure(obj, repure)
 ```
 
+### Composing
+```javascript
+function f(a, b) {
+    ...
+}
+const rf = repure(f)
+
+function g(a, b, c){
+    const r = rf(a, b)
+    return r * c
+}
+const rg = repure(g)
+
+rg(1, 1, 2)
+rg(1, 1, 2)
+rg(1, 1, 3)
+```
+
  

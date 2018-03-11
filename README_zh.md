@@ -52,5 +52,21 @@ import * as fobj from './xx' // file export 衍生函数
 const fobj2 = batchRepure(obj, repure)
 ```
 
+### 组合
+```javascript
+function f(a, b) {
+    ...
+}
+const rf = repure(f)
 
+function g(a, b, c){
+    const r = rf(a, b)
+    return r * c
+}
+const rg = repure(g)
+
+rg(1, 1, 2)
+rg(1, 1, 2)
+rg(1, 1, 3)
+```
  
