@@ -1,6 +1,6 @@
 # repure
-----
 [中文文档](./README_zh.md)
+
 A replacement for [reselect](https://github.com/reactjs/reselect.git) and providing a more simple, more natural way of writing.
 Same parameters will get same result, so the function which wrapped by `repure`  will cache the result. If the same parameter is transmitted next time, the cached results will be used.
 
